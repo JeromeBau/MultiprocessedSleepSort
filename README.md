@@ -16,13 +16,16 @@ Credit: I did not come up with this idea. It seems to have originated from a 4ch
 ## Implementation in Python using Multiprocessing
 I use this little exercise to apply the basics of multiprocessing. It is important here to use pool.apply_async such that the workers don't wait for each other to finish.
 
+To start sorting:
+
 ``` Python
 start_sorting(speed=0.1, to_be_sorted=[7, 3, 65, 2, 98])
 ```
 
 where speed is the factor by which the sleep time is divided. If the sleep time is too short, the algorithm won't work due to the time it takes to assign the work and the time a worker needs to start the work. 
 
-Result<br>
+Result:
+
 ``` Python
 [2, 3, 7, 65, 98]
 ```
