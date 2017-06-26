@@ -22,4 +22,3 @@ def start_sorting(to_be_sorted, speed=0.001):
     pool.join()
     return results
 
-start_sorting(speed=0.1, to_be_sorted=[7, 3, 65, 2, 98])
